@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — WearRight</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top left, #f9fafb, #e5e7eb 40%, #020617 100%);
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111827;
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 600px;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .accent {
+      background: linear-gradient(135deg, #111827, #4f46e5);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      color: #4b5563;
+    }
+
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4f46e5;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #111827, #4f46e5);
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1><span class="accent">Thank You!</span></h1>
+    
+    <p>Your request for early access has been received.  
+    You’re now officially on the priority list for the WearRight pilot program.</p>
+
+    <p>We’ll keep you updated as we roll out exciting news soon — including:  
+      <br><br>
+      🚀 First look at our AI sizing engine  
+      <br>
+      🏪 Early pilot store invitations  
+      <br>
+      💡 Behind‑the‑scenes development updates  
+    </p>
+
+    <span class="pill">You're early — that’s a superpower.</span>
+
+    <br><br>
+
+    <a class="button" href="https://www.wearright.ca">Back to Home</a>
+  </div>
+</body>
+</html>

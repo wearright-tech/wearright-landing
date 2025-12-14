@@ -206,6 +206,15 @@
       font-size: 0.8rem;
       color: #6b7280;
     }
+
+    .footnote a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    .footnote a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -233,18 +242,37 @@
         <span class="pill">Pilot program 2026</span>
       </div>
 
-      <div>
+      <!-- FORM WIRED TO YOUR EMAIL VIA FORMSUBMIT -->
+      <form method="POST" action="https://formsubmit.co/info.wearright@gmail.com">
         <div class="form-title">Be the first to try WearRight.</div>
         <div class="form-note">Join our early access list for pilot stores and partners.</div>
+
         <div class="form-row">
-          <input type="email" placeholder="Work email" />
-          <input type="text" placeholder="Store / brand name" />
-          <button type="button">Request Early Access</button>
+          <input
+            type="email"
+            name="email"
+            placeholder="Work email"
+            required
+          />
+          <input
+            type="text"
+            name="store_name"
+            placeholder="Store / brand name"
+          />
+          <button type="submit">Request Early Access</button>
         </div>
+
+        <!-- Optional: set a custom email subject -->
+        <input type="hidden" name="_subject" value="New WearRight early access request" />
+        <!-- Optional: simple honeypot to reduce spam -->
+        <input type="text" name="_honey" style="display:none" />
+
         <div class="footnote">
           No spam. We’ll only reach out with launch updates and pilot opportunities.
+          <br />
+          Contact: <a href="mailto:info.wearright@gmail.com">info.wearright@gmail.com</a>
         </div>
-      </div>
+      </form>
     </section>
 
     <aside class="side-panel">
@@ -258,7 +286,7 @@
 
         <div class="metric-row">
           <span>Goal</span>
-          <span class="value">↓ returns from bad fit</span>
+          <span class="value">Lower returns from bad fit</span>
         </div>
         <div class="metric-row">
           <span>Focus</span>
@@ -266,7 +294,7 @@
         </div>
         <div class="metric-row">
           <span>Phase</span>
-          <span class="value">MVP & pilot partners</span>
+          <span class="value">MVP &amp; pilot partners</span>
         </div>
       </div>
 
